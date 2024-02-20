@@ -17,7 +17,7 @@ rabbitmq:
   rpc_client_exchange: 'rpc_client'
 
 mongodb:
-  uri: 'mongodb://localhost:27017'
+  uri:
 
 webapi:
-  apikey: '19bb04d0633d521cf5930fd87d1741b6'
+  apikey:
