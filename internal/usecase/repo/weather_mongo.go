@@ -13,7 +13,7 @@ type WeatherRepo struct {
 	db *mongo.Collection
 }
 
-func New1(db *mongo.Database) *WeatherRepo {
+func New(db *mongo.Database) *WeatherRepo {
 	return &WeatherRepo{
 		db.Collection("weather_data"),
 	}

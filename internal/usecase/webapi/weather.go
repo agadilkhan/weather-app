@@ -12,7 +12,7 @@ type WeatherWebApi struct {
 	apiKey string
 }
 
-func New1(apiKey string) *WeatherWebApi {
+func New(apiKey string) *WeatherWebApi {
 	return &WeatherWebApi{
 		apiKey: apiKey,
 	}

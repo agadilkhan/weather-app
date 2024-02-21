@@ -29,8 +29,8 @@ func Run(cfg *config.Config) {
 	}
 
 	weatherUseCase := usecase.New1(
-		repo.New1(mongo.Client.Database("service")),
-		webapi.New1(cfg.WebAPI.APIKey),
+		repo.New(mongo.Client.Database("service")),
+		webapi.New(cfg.WebAPI.APIKey),
 	)
 
 	// HTTP Server
